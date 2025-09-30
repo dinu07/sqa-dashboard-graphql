@@ -1,0 +1,24 @@
+{
+  "name": "sqa-dashboard-graphql",
+  "version": "1.0.0",
+  "description": "GraphQL endpoints for TestRail APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.6.0",
+    "graphql-import": "^1.0.0-beta.2",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-s2s": "^0.20.2",
+    "jsonpath": "^1.0.2",
+    "nodemon": "^2.0.2"
+  }
+}

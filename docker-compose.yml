@@ -1,0 +1,16 @@
+version: "3"
+services:
+  sqa-dashboard-graphql:
+    image: sqa-dashboard-graphql:latest
+    ports:
+      - "4000:4000"
+    networks:
+      - default  
+  sqa-dashboard-ui:
+    image: sqa-dashboard-ui:latest
+    depends_on:
+      - sqa-dashboard-graphql
+    ports:
+      - "8080:8080"
+    networks:
+      - default
